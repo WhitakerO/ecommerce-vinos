@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Proyecto e-commerce de vinoteca online
+## Autor: Octavio Whitaker
+### Trabajo final de Coderhouse para el curso de React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
