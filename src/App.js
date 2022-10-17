@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/navbar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer title="Encuentra tu cepa ideal" description="La mejor selección de vinos de bodegas boutique" />} />
+          <Route path="/producto/:productId" element={<ItemDetailContainer />} />
+        </Routes>
+        
+      </BrowserRouter>
+    </React.Fragment>
   );
 }
 

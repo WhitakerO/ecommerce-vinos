@@ -1,0 +1,25 @@
+.greetingcontainer {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: #4a4a4a;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    flex-basis: content;
+}
+
+.greeting {     
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+}
+.greetingdesc {
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1rem;
+}
